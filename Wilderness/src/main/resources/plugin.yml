@@ -1,0 +1,20 @@
+name: ${project.artifactId}
+main: org.originmc.wilderness.Wilderness
+author: Sudzzy
+version: ${project.version}
+description: ${project.description}
+softdepend: [Factions]
+commands:
+  wildreload:
+    aliases: [wildernessreload]
+    description: Reload Wilderness config
+    permission: wilderness.reload
+    permission-message: '§cYou do not have permission to use that command.'
+  wilderness:
+    aliases: [wild]
+    description: Teleport to a random location
+    permission: wilderness.teleport
+    permission-message: '§cYou do not have permission to use that command.'
+permissions:
+  wilderness.reload: {default: op}
+  wilderness.teleport: {default: true}

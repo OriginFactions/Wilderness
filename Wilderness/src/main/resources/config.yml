@@ -1,0 +1,42 @@
+# Version of the config file. Do not change this.
+version: 1
+
+# Amount of attempts to find a safe location before giving up.
+attempts: 25
+
+# Only allows teleportation to Wilderness territory.
+factions: true
+
+# Sets the default world to be teleported to if not in a valid world.
+default-world: world
+
+# This message is displayed when the user has successfully teleported. Set to '' to display nothing.
+success-message: '&eSuccessfully teleported to &d{X} {Y} {Z}&e in world &2{WORLD}'
+
+# This message is displayed when the plugin fails to find a safe location. Set to '' to display nothing.
+failed-message: '&cFailed to find a safe location after &e{ATTEMPTS} attempts&c. Try again!'
+
+# Materials wilderness is not allowed to teleport the player to. Types found here: http://goo.gl/JIs4zo
+denied-blocks:
+  - STATIONARY_LAVA
+  - STATIONARY_WATER
+  - WATER
+  - LAVA
+  - CACTUS
+
+# Worlds that you wish to have wilderness enabled must be listed here.
+worlds:
+  world:
+    # The maps center X co-ordinate.
+    center-x: 0
+
+    # The maps center Z co-ordinate.
+    center-z: 0
+
+    # Maximum distance away from the center co-ordinates to teleport.
+    range: 7000
+
+  example_world:
+    center-x: 0
+    center-z: 0
+    range: 1000
